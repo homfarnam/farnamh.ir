@@ -36,28 +36,28 @@ class Contact extends Component {
             disabled: true
         });
 
-        // Axios.post('http://localhost:3030/api/email', this.state)
-        //     .then(res => {
-        //         if(res.data.success) {
-        //             this.setState({
-        //                 disabled: false,
-        //                 emailSent: true
-        //             });
-        //         } else {
-        //             this.setState({
-        //                 disabled: false,
-        //                 emailSent: false
-        //             });
-        //         }
-        //     })
-        //     .catch(err => {
-        //         console.log(err);
+        Axios.post('http://localhost:3030/api/email', this.state)
+            .then(res => {
+                if(res.data.success) {
+                    this.setState({
+                        disabled: false,
+                        emailSent: true
+                    });
+                } else {
+                    this.setState({
+                        disabled: false,
+                        emailSent: false
+                    });
+                }
+            })
+            .catch(err => {
+                console.log(err);
 
-        //         this.setState({
-        //             disabled: false,
-        //             emailSent: false
-        //         });
-        //     })
+                this.setState({
+                    disabled: false,
+                    emailSent: false
+                });
+            })
 
     }
     render() {
