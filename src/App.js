@@ -40,7 +40,11 @@ export class App extends Component {
       <Router>
         <Container className='p-0' fluid={true} >
           <Navbar className='border-bottom' bg='transparent' expand='lg'>
-            <Navbar.Brand> FARNAM </Navbar.Brand>
+          <Route path='/' render={()=> <HomePage title={this.state.Home.title} job={this.state.Home.job} />}>
+               <Navbar.Brand> FARNAM </Navbar.Brand>
+          </Route>
+            
+            
             <Navbar.Toggle className='border-0' aria-controls='navbar-toggle' />
             <Navbar.Collapse>
               <Nav className='ml-auto'>

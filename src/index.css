@@ -58,3 +58,32 @@ code {
         text-align: center;
     }
 }
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    .titlePage {
+        font-size: 40px !important;
+        width: 100% !important;
+        font-weight: 900 !important;
+        font-family: ubuntu;
+        text-align: center;
+    }
+    .subtitle {
+        font-size: 30px !important;
+        text-align: center;
+    }
+}
+
+.titlePage {
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+}
+
+.Hero__title {
+    display: flex;
+    justify-content: center;
+}

@@ -15,7 +15,7 @@ const About = (props) => {
             <p>I am an expert in Wordpress too. I have some skills in UI/UX Design.</p>
             <p>Also, I can work with Zepline and Adobe XD.</p>
             <p>In these years I learned many things with self-study, I can learn anything quickly.</p>
-            <p>I can talk in English, French, and German.</p>
+ 
 
 
            </Content>
