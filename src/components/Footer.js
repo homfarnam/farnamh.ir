@@ -12,7 +12,7 @@ const Footer =()=>{
                     </Col>
 
                     <Col className='p-0 d-flex justify-content-center' md={3}>
-                        This site was made by ❤ Farnam .
+                        This site was made with ❤ by Farnam 
                     </Col>
                 </Row>
             </Container>
